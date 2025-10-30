@@ -1,0 +1,26 @@
+{
+	"FileVersion": 3,
+	"Version": 100,
+	"VersionName": "1.0.0",
+	"FriendlyName": "ArbitraryShapedTreePlugin",
+	"Description": "A versatile, arbitrarily-shaped tree-based data structure designed to assist with serialization and deserialization automatically, and to better organize game architecture—ideal for implementing talent trees, skill trees.",
+	"Category": "Programming",
+	"CreatedBy": "RainButterfly",
+	"CreatedByURL": "https://github.com/superdinosaur-L",
+	"DocsURL": "https://github.com/superdinosaur-L/ArbitraryShapedTreePlugin/wiki",
+	"MarketplaceURL": "",
+	"SupportURL": "https://github.com/superdinosaur-L",
+	"EngineVersion": "5.5.0",
+	"CanContainContent": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "ArbitraryShapedTreePlugin",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		}
+	]
+}

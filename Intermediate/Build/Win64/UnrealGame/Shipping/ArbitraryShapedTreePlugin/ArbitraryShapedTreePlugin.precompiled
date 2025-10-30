@@ -1,0 +1,8 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\ArbitraryShapedTreePlugin\\Module.ArbitraryShapedTreePlugin.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\ArbitraryShapedTreePlugin\\AnyShapedTree.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\ArbitraryShapedTreePlugin\\AnyShapedTreeNode.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\ArbitraryShapedTreePlugin\\ArbitraryShapedTreePlugin.cpp.obj"
+	]
+}
