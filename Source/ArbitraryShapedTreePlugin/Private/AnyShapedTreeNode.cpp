@@ -1,4 +1,4 @@
-// Copyright 2024 RainButterfly. All Rights Reserved.
+// Copyright 2025 RainButterfly. All Rights Reserved.
 
 #include "AnyShapedTreeNode.h"
 #include "AnyShapedTree.h"
@@ -182,6 +182,7 @@ void UAnyShapedTreeNode::AddExtraStruct(const FInstancedStruct& Extra)
 {
 	ObtainSelfCopy().ExtraStructInform.Add(Extra);
 }
+
 
 
 
