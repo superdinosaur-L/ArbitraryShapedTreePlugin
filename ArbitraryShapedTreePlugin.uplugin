@@ -8,7 +8,7 @@
 	"CreatedBy": "RainButterfly",
 	"CreatedByURL": "https://github.com/superdinosaur-L",
 	"DocsURL": "https://github.com/superdinosaur-L/ArbitraryShapedTreePlugin/wiki",
-	"MarketplaceURL": "",
+	"FabURL": "com.epicgames.launcher://ue/Fab/product/957adb79-af31-4b7d-aba2-1382ec98dfd9",
 	"SupportURL": "https://github.com/superdinosaur-L",
 	"EngineVersion": "5.5.0",
 	"CanContainContent": false,
@@ -23,4 +23,5 @@
 			]
 		}
 	]
+
 }
