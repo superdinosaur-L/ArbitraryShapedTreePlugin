@@ -61,7 +61,8 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "AnyTree|TreeNode")
 	void AddExtraStruct(const FInstancedStruct& Extra);
 
-
+	UPROPERTY(BlueprintReadOnly, Category = "AnyTree|TreeNode")
+	FString ExplicitNameOuter;
 protected:
 
 	UPROPERTY(BlueprintReadOnly, Category = "AnyTree|TreeNode", meta = (ToolTip = "When the same encoding has already been recorded, this property will be set to true"))
@@ -76,8 +77,6 @@ protected:
 	UPROPERTY(BlueprintReadOnly, Category = "AnyTree|TreeNode")
 	UObject* SelfOuter;
 
-	UPROPERTY(BlueprintReadOnly, Category = "AnyTree|TreeNode")
-	FString ExplicitNameOuter;
 
 	//Automatically set during ProcessInformAuto to indicate which tree this node belongs to
 	UPROPERTY(BlueprintReadOnly, Category = "AnyTree|TreeNode")
@@ -85,5 +84,6 @@ protected:
 
 
 };
+
 
 
