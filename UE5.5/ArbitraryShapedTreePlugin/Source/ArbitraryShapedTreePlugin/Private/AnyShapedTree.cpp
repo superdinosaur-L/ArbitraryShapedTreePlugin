@@ -1,3 +1,4 @@
+// Copyright 2025 RainButterfly. All Rights Reserved.
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
@@ -628,6 +629,7 @@ TArray<int32>& UAnyShapedTree::GetLastLinked()
 {
 	return LastLinkedNode;
 }
+
 
 
 
