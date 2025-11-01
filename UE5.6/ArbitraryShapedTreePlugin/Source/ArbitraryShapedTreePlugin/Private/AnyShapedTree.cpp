@@ -497,9 +497,25 @@ bool UAnyShapedTree::AddNewNodeIntelligent(UAnyShapedTreeNode* TargetNode)
 			}
 		}
 	}
+	if(TargetNode->GetCode().Len() == 0)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Red, FString::Printf(
+		TEXT("%s 's LHCode can not be empty"), *TargetNode->ExplicitNameOuter));
+		UE_LOG(LogTemp, Error, TEXT("%s 's LHCode can not be empty"), *TargetNode->ExplicitNameOuter);
+		AllowConstruct = false;
+		return false;
+	}
 	//The first reason for construction failure is that the target encoding was not written according to the 
 	//established rules
 	HandleResourceLHCode(TargetNode->GetCode());
+	if(TargetNode->GetCode().Len() == 0)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Red, FString::Printf(
+		TEXT("%s 's LHCode can not be empty"), *TargetNode->ExplicitNameOuter));
+		UE_LOG(LogTemp, Error, TEXT("%s 's LHCode can not be empty"), *TargetNode->ExplicitNameOuter);
+		AllowConstruct = false;
+		return false;
+	}
 	NumOfTryToConstructedNode++;
 	//The second reason for construction failure is that the target encoding has already been recorded in the  tree
 	FindInRecordedForCons(TargetNode);//If the LastLinkedNode is not modified when setting nodes in reverse from the tree
@@ -630,6 +646,7 @@ TArray<int32>& UAnyShapedTree::GetLastLinked()
 {
 	return LastLinkedNode;
 }
+
 
 
 
