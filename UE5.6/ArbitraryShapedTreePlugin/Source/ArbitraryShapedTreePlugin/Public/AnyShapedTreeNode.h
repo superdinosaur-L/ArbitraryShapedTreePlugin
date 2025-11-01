@@ -61,6 +61,8 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "AnyTree|TreeNode")
 	void AddExtraStruct(const FInstancedStruct& Extra);
 
+	UPROPERTY(BlueprintReadOnly, Category = "AnyTree|TreeNode")
+	FString ExplicitNameOuter;
 
 protected:
 
@@ -76,8 +78,6 @@ protected:
 	UPROPERTY(BlueprintReadOnly, Category = "AnyTree|TreeNode")
 	UObject* SelfOuter;
 
-	UPROPERTY(BlueprintReadOnly, Category = "AnyTree|TreeNode")
-	FString ExplicitNameOuter;
 
 	//Automatically set during ProcessInformAuto to indicate which tree this node belongs to
 	UPROPERTY(BlueprintReadOnly, Category = "AnyTree|TreeNode")
@@ -85,5 +85,6 @@ protected:
 
 
 };
+
 
 
